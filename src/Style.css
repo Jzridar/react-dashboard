@@ -1,0 +1,162 @@
+
+ul {
+    list-style-type: none;
+    height: 50%;
+    margin: 0px;
+    padding: 0;
+    font-style: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  li{
+    margin: 20px;
+  }
+
+  .sidebar {
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 35%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 900px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .avgrating {
+    position: absolute;
+    top: 20px;
+    left: 800px;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 0;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .reviews {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 0;
+    width: 200px;
+    height: 80px;
+   
+  }
+  
+  .title{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 80px;
+    text-align:left
+  }
+
+  .title-value{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    height: 10px;
+    text-align:left;
+    font-weight: bold;
+  }
+
+  .analysis-value{
+    text-align:center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+
+  .sentiment-analysis {
+    position: absolute;
+    top: 20px;
+    left:1100px;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 0;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .web-visitor {
+    position: absolute;
+    top: 420px;
+    left:500px;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 0;
+    width: 900px;
+    height: 500px;
+    text-align: left;
+  }
+
+  body {
+    height: 95vh;
+    background: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+/**
+  header{
+    background: coral;
+    padding: 2em 0 2em 0;
+  }
+  
+  .right{
+    background: lightgray;
+    padding: 3em 0 3em 0;
+    flex:1 1 100px ;
+  }
+
+  footer{
+    background: coral;
+    padding: 1em 0 1em 0 ;
+  }
+  
+  */
+
+  .main{
+    display: flex;
+    flex: 1;
+  }
+
+  main {
+    display: flex;
+    flex: 5 5 150px;
+  }
+
+  .sidebar {
+    background: darkgray;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+  }
+
+  
+
+  @media all and (max-width:550px){
+    .main {
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+  }

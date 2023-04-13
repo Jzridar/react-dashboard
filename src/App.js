@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./Components.js/Sidebar";
+import AvgRating from "./Components.js/AvgRating";
+import WebsiteVisitors from "./Components.js/WebsiteVisitors";
+import Reviews from "./Components.js/Reviews";
+import SentimentAnalysis from "./Components.js/SentimentAnalysis";
+import './Style.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="main">
+     
+      <Sidebar />
+      <main>
+        <Reviews></Reviews>
+        <AvgRating rating="4.6"></AvgRating>
+        <SentimentAnalysis analysis={[960,122,321]}></SentimentAnalysis>
+        <WebsiteVisitors visitor="30"></WebsiteVisitors>
+      </main>
+     
+      
     </div>
-  );
+   
+  )
 }
 
 export default App;
